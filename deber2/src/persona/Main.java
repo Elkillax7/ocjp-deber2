@@ -5,9 +5,8 @@
  */
 package persona;
 
-
 import javax.swing.JOptionPane;
- 
+
 /**
  *
  * @author aguer
@@ -42,30 +41,24 @@ public class Main {
         int edadAux2 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE SU EDAD POR FAVOR"));
         char generoAux2 = JOptionPane.showInputDialog("INGRESE SU GENERO POR FAVOR").charAt(0);
 
-        Persona persona2 = new Persona(nombreAux2, edadAux2,generoAux2);
+        Persona persona2 = new Persona(nombreAux2, edadAux2, generoAux2);
         persona2.setAltura(Float.parseFloat(JOptionPane.showInputDialog("INGRESE ALTURA")));
         persona2.setPeso(Float.parseFloat(JOptionPane.showInputDialog("INGRESE PESO")));
         JOptionPane.showMessageDialog(null, persona2.toString());
         persona2.mostrarIMC();
         persona2.mostrarSiEsMayorDeEdad();
-        
-        
+
         //DATOS PARA PERSONA3
-        
         Persona persona3 = new Persona();
         persona3.setNombre(JOptionPane.showInputDialog("INGRESE SU NOMBRE POR FAVOR"));
         persona3.setEdad(Integer.parseInt(JOptionPane.showInputDialog("INGRESE SU EDAD POR FAVOR")));
         persona3.setGenero(JOptionPane.showInputDialog("INGRESE SU GENERO POR FAVOR").charAt(0));
         persona3.setPeso(Float.parseFloat(JOptionPane.showInputDialog("INGRESE PESO")));
         persona3.setAltura(Float.parseFloat(JOptionPane.showInputDialog("INGRESE ALTURA")));
-        
+
         JOptionPane.showMessageDialog(null, persona3.toString());
         persona3.mostrarIMC();
         persona3.mostrarSiEsMayorDeEdad();
-        
-        
-    
-
 
     }
 
