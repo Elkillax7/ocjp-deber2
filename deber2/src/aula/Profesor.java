@@ -5,10 +5,6 @@
  */
 package aula;
 
-/**
- *
- * @author Alexis
- */
 public class Profesor extends Persona {
 
     private String materia;
@@ -30,10 +26,5 @@ public class Profesor extends Persona {
     public int getProbabilidadAsistencia() {
         return Math.random() < 0.8 ? 1 : 0;
     }
-
-    
-    
-    
-    
 
 }

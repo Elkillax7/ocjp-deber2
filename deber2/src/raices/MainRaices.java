@@ -15,9 +15,9 @@ public class MainRaices {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         Raiz raiz = new Raiz();
-        
+
         raiz.getDiscriminante();
         raiz.comprobarRaices();
         raiz.obtenerRaices();

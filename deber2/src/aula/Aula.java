@@ -7,10 +7,6 @@ package aula;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Alexis
- */
 public class Aula {
 
     private int id;
@@ -30,8 +26,6 @@ public class Aula {
     public int getId() {
         return id;
     }
-    
-    
 
     private int asignarNumMaxEstu() {
         return (int) (Math.random() * 15) + 20;
@@ -72,7 +66,7 @@ public class Aula {
         int numHombres = 0;
         for (Estudiante estudiante : estudiantes) {
             if (estudiante.getGenero() == 'M' && estudiante.getNota() > 7) {
-                numHombres=numHombres+1;
+                numHombres = numHombres + 1;
             }
         }
         return numHombres;
@@ -82,7 +76,7 @@ public class Aula {
         int numMujeres = 0;
         for (Estudiante estudiante : estudiantes) {
             if (estudiante.getGenero() == 'F' && estudiante.getNota() > 7) {
-                numMujeres=numMujeres+1;
+                numMujeres = numMujeres + 1;
             }
         }
         return numMujeres;
